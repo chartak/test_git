@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone program</title>
+    <style>
+        .button {
+            height:40px;
+            width:40px;
+            margin-left:23px;
+            margin-top:15px;
+        }
+        .first_button {
+            height:40px;
+            width:40px;
+            margin-top:15px;
+        }
+        .save_button {
+            height:40px;
+            width:106px;
+            margin-left:23px;
+            margin-top:15px;
+        }
+        .textarea {
+            padding-left:30px;
+        }
+        #display {
+            height:30px;
+            text-align:right;
+        }
+        #textarea {
+            text-align:right;
+        }
+    </style>
+<head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input type="text" id="display" name="display" ><br/>
+            <button type="button" onclick="putnumber(1, document.getElementById('display').value)" class="first_button">1</button>
+            <button type="button" onclick="putnumber(2, document.getElementById('display').value)" class="button">2</button>
+            <button type="button" onclick="putnumber(3, document.getElementById('display').value)" class="button">3</button><br/>
+            <button type="button" onclick="putnumber(4, document.getElementById('display').value)" class="first_button">4</button>
+            <button type="button" onclick="putnumber(5, document.getElementById('display').value)" class="button">5</button>
+            <button type="button" onclick="putnumber(6, document.getElementById('display').value)" class="button">6</button><br />
+            <button type="button" onclick="putnumber(7, document.getElementById('display').value)" class="first_button">7</button>
+            <button type="button" onclick="putnumber(8, document.getElementById('display').value)" class="button">8</button>
+            <button type="button" onclick="putnumber(9, document.getElementById('display').value)" class="button">9</button><br />
+            <button type="button" onclick="putnumber(0, document.getElementById('display').value)" class="first_button">0</button>
+            <button type="button" onclick="savedata(document.getElementById('textarea').value)" class="save_button">Save</button>
+        </td>
+        <td class="textarea" valign="top">
+            <textarea rows="10" cols="25" id="textarea"></textarea>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
